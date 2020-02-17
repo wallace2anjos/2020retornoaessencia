@@ -5,263 +5,65 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:600&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="css/bootstrap.min.css">
-      <link rel="stylesheet" href="css/style-materia.css">
+      <link rel="stylesheet" href="css/style-padrao.css">
+      <link rel="stylesheet" href="css/style-2020.css">
       <title>2020 - Retorno à Essência</title>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148377615-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-148377615-1');
+      </script>
+      <!-- Facebook Pixel Code -->
+      <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '826721027524662');
+      fbq('track', 'PageView');
+      </script>
+      <noscript>
+      <img height="1" width="1"
+      src="https://www.facebook.com/tr?id=826721027524662&ev=PageView
+      &noscript=1"/>
+      </noscript>
+      <!-- End Facebook Pixel Code -->
     </head>
-    <style>
-      .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      }
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-        }
-      }
-      .view .mask {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        background: #0000006b;
-      }
-    </style>
     <body>
-        <!--
-        ********************************************************************************************************
-        -------------------------------------------INICIO DO TEMPLATE-------------------------------------------
-        ********************************************************************************************************
-        -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:600&display=swap" rel="stylesheet">
-        <style>
-        section {
-          padding: 100px 0;
-        }
-        html, body {
-          overflow-x: hidden;
-        }
-        body {
-          font-family: 'Lato', sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          background-color: #252525;
-        }
-        h1 {
-          font-family: 'Montserrat', sans-serif;
-          font-size: 200%;
-          text-transform: uppercase;
-          letter-spacing: 3px;
-          font-weight: 400;
-        }
-        h2 {
-          font-family: 'Montserrat', sans-serif;
-          font-size: 1.6rem;
-        }
-
-        .timeline-header {
-          background: #1c1c1b;
-          color: #FFFFFF;
-          padding: 150px 0;
-        }
-        .timeline-header p {
-          font-family: 'Allura';
-          color: rgba(255, 255, 255, 0.2);
-          margin-bottom: 0;
-          font-size: 60px;
-          margin-top: -30px;
-        }
-
-        .timeline {
-          position: relative;
-        }
-        .timeline::before {
-          content: '';
-          background: #ff75004f;
-          width: 5px;
-          height: 95%;
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          border-radius: 50px;
-        }
-
-        .timeline-item {
-          width: 100%;
-          margin-bottom: 70px;
-        }
-        .timeline-item:nth-child(even) .timeline-content {
-          float: right;
-          padding: 40px 30px 10px 30px;
-        }
-        .timeline-item:nth-child(even) .timeline-content .date {
-          right: auto;
-          left: 0;
-        }
-        .timeline-item:nth-child(even) .timeline-content::after {
-          content: '';
-          position: absolute;
-          border-style: solid;
-          width: 0;
-          height: 0;
-          top: 30px;
-          left: -15px;
-          border-width: 10px 15px 10px 0;
-          border-color: transparent #ff7500 transparent transparent;
-        }
-        .timeline-item::after {
-          content: '';
-          display: block;
-          clear: both;
-        }
-
-        .timeline-content {
-          position: relative;
-          width: 45%;
-          padding: 10px 30px;
-          border-radius: 4px;
-          background: #f5f5f5;
-          box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
-        }
-        .timeline-content::after {
-          content: '';
-          position: absolute;
-          border-style: solid;
-          width: 0;
-          height: 0;
-          top: 30px;
-          right: -15px;
-          border-width: 10px 0 10px 15px;
-          border-color: transparent transparent transparent #ff7500;
-        }
-
-        .timeline-img {
-          width: 30px;
-          height: 30px;
-          background: #1c1c1b;
-          border-radius: 50%;
-          position: absolute;
-          left: 50%;
-          margin-top: 25px;
-          margin-left: -15px;
-        }
-
-        .timeline a {
-          background: #ff7500;
-          color: #FFFFFF;
-          padding: 8px 20px;
-          text-transform: uppercase;
-          font-size: 14px;
-          margin-bottom: 20px;
-          margin-top: 10px;
-          display: inline-block;
-          border-radius: 2px;
-          box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
-        }
-        .timeline a:hover,.timeline a:active,.timeline a:focus {
-          background: #1c1c1b;
-          color: #FFFFFF;
-          text-decoration: none;
-        }
-
-        .timeline a:focus{
-          box-shadow:0 0 0 0.2rem #ff750050;
-        }
-
-        .timeline-card {
-          padding: 0 !important;
-        }
-        .timeline-card p {
-          padding: 0 20px;
-        }
-        .timeline-card a {
-          margin-left: 20px;
-        }
-
-        .timeline-item .timeline-img-header {
-          background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://picsum.photos/1000/800/?random") center center no-repeat;
-          background-size: cover;
-        }
-
-        .timeline-img-header {
-          height: 250px;
-          position: relative;
-          margin-bottom: 20px;
-        }
-        .timeline-img-header h2 {
-          color: #FFFFFF;
-          position: absolute;
-          bottom: 5px;
-          left: 20px;
-        }
-
-        blockquote {
-          margin-top: 30px;
-          color: #757575;
-          border-left-color: #1c1c1b;
-          padding: 0 20px;
-        }
-
-        .date {
-          background: #ff7500;
-          display: inline-block;
-          color: #FFFFFF;
-          padding: 10px;
-          position: absolute;
-          top: 17px;
-          right: 0;
-        }
-        .lead{
-          color: #fff;
-          font-weight: 400;
-          font-size: 1rem;
-        }
-
-        @media screen and (max-width: 768px) {
-          .timeline::before {
-            left: 50px;
-          }
-          .timeline .timeline-img {
-            left: 50px;
-          }
-          .timeline .timeline-content {
-            max-width: 100%;
-            width: auto;
-            margin-left: 70px;
-          }
-          .timeline .timeline-item:nth-child(even) .timeline-content {
-            float: none;
-          }
-          .timeline .timeline-item:nth-child(odd) .timeline-content::after {
-            content: '';
-            position: absolute;
-            border-style: solid;
-            width: 0;
-            height: 0;
-            top: 30px;
-            left: -15px;
-            border-width: 10px 15px 10px 0;
-            border-color: transparent #ff7500 transparent transparent;
-          }
-        }
-
-        </style>
-        <header>
-          <div class="container-fluid text-center" style="background:#383635 url(https://i.ibb.co/Jm2n90L/YOUTUBE-KITPrancheta-1.png)no-repeat center center/cover; padding:10em 0">
+      <!--
+      --------------------------------------
+      -------------------------------------- INÍCIO DO TEMPLATE
+      --------------------------------------
+      -->
+      <header>
+        <div class="container-fluid text-center" style="background:#383635 url(https://i.ibb.co/Jm2n90L/YOUTUBE-KITPrancheta-1.png)no-repeat center center/cover; padding:10em 0">
+        </div>
+        <div class="pre-bod">
+          <div class="bod">
+            <div class="social text-center">
+              <a href="https://www.youtube.com/user/ibcbarra" target="blank"><i class="fab fa-youtube fa-lg"></i></a>
+              <a href="https://www.instagram.com/ibatitude/" target="blank"><i class="fab fa-instagram fa-lg"></i></a>
+              <a href="https://pt-br.facebook.com/Ibatitude/" target="blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+              <a href="https://twitter.com/ibatitude" target="blank"><i class="fab fa-twitter fa-lg"></i></a>
+            </div>
           </div>
-        </header>
-        <main role="main" class=" container text-center inner cover mt-5 pt-5">
-          <h1 class="cover-heading" style="color: #ff7500;">2020 é o ano  de retornar à Essência</h1>
-          <p class="lead">Aqui você vai encontrar todo conteúdo relacionado ao tema do ano e as ênfases de cada mês disponibilizados pela nossa igreja. Portanto prossigamos para o alvo, pelo prêmio da soberana vocação de Deus em Cristo Jesus. Filipenses 3:14</p>
-        </main>
+        </div>
+      </header>
+      <main role="main" class=" container text-center inner cover mt-5 pt-5">
+        <h1 class="cover-heading" style="color: #ff7500;">2020 é o ano  de retornar à Essência</h1>
+        <p class="lead">Aqui você vai encontrar todo conteúdo relacionado ao tema do ano e as ênfases de cada mês disponibilizados pela nossa igreja. Portanto prossigamos para o alvo, pelo prêmio da soberana vocação de Deus em Cristo Jesus. Filipenses 3:14</p>
+      </main>
         <!-- 
           1 ARREPENDIMENTO
         -->
@@ -646,85 +448,109 @@
             </div>
           </div>
         </section>
-         <!--
-         *******************************************************************************************************
-         -------------------------------------------FINAL DO TEMPLATE-------------------------------------------
-         *******************************************************************************************************
-         -->
-         <!-- Optional JavaScript -->
-         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
-         <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
-         <script src="http://bemmaistv.com.br/src/js/addons/datatables-select.min.js"></script>
-         <script src="http://bemmaistv.com.br/src/js/addons/datatables.min.js"></script>
-         <script src="http://bemmaistv.com.br/src/js/addons/imagesloaded.pkgd.min.js"></script>
-         <script src="http://bemmaistv.com.br/src/js/addons/jquery.zmd.hierarchical-display.min.js"></script>
-         <script src="http://bemmaistv.com.br/src/js/addons/masonry.pkgd.min.js"></script>
-         <script src="http://bemmaistv.com.br/src/js/addons/progressBar.min.js"></script>
-         <script src="http://bemmaistv.com.br/src/js/addons/rating.min.js"></script>
-         <script src="http://bemmaistv.com.br/src/js/addons-pro/chat.min.js"></script>
-         <script src="http://bemmaistv.com.br/src/js/addons-pro/multi-range.min.js"></script>
-         <script src="http://bemmaistv.com.br/src/js/addons-pro/stepper.min.js"></script>
-         <script src="http://bemmaistv.com.br/src/js/addons-pro/steppers.min.js"></script>
-         <script src="http://bemmaistv.com.br/src/js/addons-pro/timeline.min.js"></script>
+  <!--
+  --------------------------------------
+  -------------------------------------- FINAL DO TEMPLATE
+  --------------------------------------
+  -->
+  <!--  SCRIPTS cdnjs  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
+  <!--  SCRIPTS bootstrap  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+  <!--  SCRIPT Material Design Bootstrap  -->
+  <script src="js/addons/datatables-select.min.js"></script>
+  <script src="js/addons/datatables.min.js"></script>
+  <script src="js/addons/imagesloaded.pkgd.min.js"></script>
+  <script src="js/addons/jquery.zmd.hierarchical-display.min.js"></script>
+  <script src="js/addons/masonry.pkgd.min.js"></script>
+  <script src="js/addons/progressBar.min.js"></script>
+  <script src="js/addons/rating.min.js"></script>
+  <script src="js/addons-pro/chat.min.js"></script>
+  <script src="js/addons-pro/multi-range.min.js"></script>
+  <script src="js/addons-pro/stepper.min.js"></script>
+  <script src="js/addons-pro/steppers.min.js"></script>
+  <script src="js/addons-pro/timeline.min.js"></script>
+  <!-- SCRIPT Scroll Reveal call -->
+  <script>
+  $(function(){
+  
+  window.sr = ScrollReveal();
+  
+  if ($(window).width() < 768) {
+  
+    if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+      $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+    }
+  
+    sr.reveal('.js--fadeInRight', {
+      origin: 'right',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+  
+  } else {
+    
+    sr.reveal('.js--fadeInLeft', {
+      origin: 'left',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+  
+    sr.reveal('.js--fadeInRight', {
+      origin: 'right',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+  
+  }
+  
+  sr.reveal('.js--fadeInLeft', {
+      origin: 'left',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+  
+    sr.reveal('.js--fadeInRight', {
+      origin: 'right',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+  });
+  </script>
 
-         <script>
-          $(function(){
-          
-          window.sr = ScrollReveal();
-          
-          if ($(window).width() < 768) {
-          
-            if ($('.timeline-content').hasClass('js--fadeInLeft')) {
-              $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
-            }
-          
-            sr.reveal('.js--fadeInRight', {
-              origin: 'right',
-              distance: '300px',
-              easing: 'ease-in-out',
-              duration: 800,
-            });
-          
-          } else {
-            
-            sr.reveal('.js--fadeInLeft', {
-              origin: 'left',
-              distance: '300px',
-              easing: 'ease-in-out',
-              duration: 800,
-            });
-          
-            sr.reveal('.js--fadeInRight', {
-              origin: 'right',
-              distance: '300px',
-              easing: 'ease-in-out',
-              duration: 800,
-            });
-          
-          }
-          
-          sr.reveal('.js--fadeInLeft', {
-              origin: 'left',
-              distance: '300px',
-              easing: 'ease-in-out',
-              duration: 800,
-            });
-          
-            sr.reveal('.js--fadeInRight', {
-              origin: 'right',
-              distance: '300px',
-              easing: 'ease-in-out',
-              duration: 800,
-            });
-          
-          
-          });
-          
-          </script>
-      </body>
-   </html>
+  <!-- Cross domain iframe resize -->
+  <script type="text/javascript">
+    // Get height of document
+  function getDocHeight(doc) {
+      doc = doc || document;
+      // from http://stackoverflow.com/questions/1145850/get-height-of-entire-document-with-javascript
+      var body = doc.body, html = doc.documentElement;
+      var height = Math.max( body.scrollHeight, body.offsetHeight, 
+          html.clientHeight, html.scrollHeight, html.offsetHeight );
+      return height;
+  }
+
+  // send docHeight onload
+  function sendDocHeightMsg(e) {
+      var ht = getDocHeight();
+      parent.postMessage( JSON.stringify( {'docHeight': ht} ), '*' );
+  }
+
+  // assign onload handler 
+  if ( window.addEventListener ) {
+      window.addEventListener('load', sendDocHeightMsg, false);
+  } else if ( window.attachEvent ) { // ie8
+      window.attachEvent('onload', sendDocHeightMsg);
+  }
+  </script>
+  </body>
+</html>
