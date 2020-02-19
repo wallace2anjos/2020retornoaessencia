@@ -52,8 +52,8 @@ function handleDocHeightMsg(e) {
 
 // assign message handler
 if ( window.addEventListener ) {
-    window.addEventListener('message', handleDocHeightMsg, false);
+  window.addEventListener('message', handleDocHeightMsg, false);
 } else if ( window.attachEvent ) { // ie8
-    window.attachEvent('onmessage', handleDocHeightMsg);
+  window.attachEvent('onmessage', handleDocHeightMsg);
 }
 </script>
