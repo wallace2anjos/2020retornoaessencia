@@ -132,7 +132,7 @@
       margin-left: -15px;
     }
 
-    .timeline a {
+    .timeline > .container > .timeline-item > .timeline-content > .btn-group > a {
       background: #ff7500;
       color: #FFFFFF;
       padding: 8px 20px;
